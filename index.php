@@ -27,10 +27,13 @@ if ($response !== false) {
         $articles = $data['articles'];
 
         // Begin HTML output
-        echo '<html><head><title>News Articles</title></head><body>';
+        echo '<html>';
+
+        echo '<head><link rel="stylesheet" type="text/css" href="style.css"><title>News Articles</title></head><body>';
 
         // Loop through and display articles
         foreach ($articles as $index => $article) {
+            echo "<div class='card'>";
             echo "<h2>Article $index</h2>";
             echo "<p><strong>Source:</strong> " . $article['source']['name'] . "</p>";
             echo "<p><strong>Title:</strong> " . $article['title'] . "</p>";
@@ -38,7 +41,7 @@ if ($response !== false) {
             echo "<p><strong>URL:</strong> <a href='" . $article['url'] . "' target='_blank'>Read More</a></p>";
             echo "<p><strong>Published At:</strong> " . $article['publishedAt'] . "</p>";
             echo "<p><strong>Content:</strong> " . $article['content'] . "</p>";
-            echo "<hr>";
+            echo "</div>";
         }
 
         // End HTML output

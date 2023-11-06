@@ -1,0 +1,31 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
