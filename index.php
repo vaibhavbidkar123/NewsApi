@@ -34,7 +34,7 @@ if ($response !== false) {
         // Loop through and display articles
         foreach ($articles as $index => $article) {
             echo "<div class='card'>";
-            echo "<h2>Article $index</h2>";
+            echo "<h2>News Article $index</h2>";
             echo "<p><strong>Source:</strong> " . $article['source']['name'] . "</p>";
             echo "<p><strong>Title:</strong> " . $article['title'] . "</p>";
             echo "<p><strong>Description:</strong> " . $article['description'] . "</p>";
